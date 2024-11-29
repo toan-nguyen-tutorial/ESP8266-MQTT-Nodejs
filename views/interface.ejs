@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+<main>
+    <!-- <button id="change_size" type="button" class="top_button" 
+    onclick="SetDrawingSize( true )">
+    Change Drawing Size</button>  -->
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 chart-gl background-body">
+                <div id="glg_area">
+                     <div id="loader_container">
+                         <div id="loader"></div> 
+                     </div>
+                </div>  
+            </div>  
+            </div>
+        </div>
+    </div>
+    <div id="value1" data-value="0"></div>
+    <div id="value2" data-value="0"></div>
+    
+    <div id="alertBox" class="hidden">
+        <p id="alertMessage"></p>
+    </div>
+
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/public/js/socketio.js"></script>
+    
+</main>
+<%- include('partials/footer') %>

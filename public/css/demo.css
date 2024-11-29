@@ -1,0 +1,127 @@
+/* css base */
+
+
+.navbar .nav-item a.active {
+  color: white;
+}
+
+:root {
+  --color1: #b11735;
+  --color2: #d4ecf9;
+  --color3: #f19629;
+  --color4: #d91535;
+  --color5: #00a3c7;
+}
+/* css base */
+
+
+.background-navbar{
+  background-color: var(--color5);
+}
+
+
+
+
+.top_button {
+ 
+}
+
+.top_button_large {
+ 
+}
+
+#loader_container {
+ 
+}
+
+#loader {
+
+}
+
+.navbar .nav-item .nav-link {
+  color: black;
+  font-weight: 500; /* Độ đậm vừa */
+  font-size: 18px; /* Cỡ chữ */
+
+}
+
+
+
+@-webkit-keyframes loader_spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes loader_spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.background-body {
+  background-color: #d4ecf9;
+}
+.chart-gl {
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+}
+
+.form-status p {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+#status {
+  color: gray; /* Màu sắc mặc định khi chưa kết nối */
+}
+
+#status.connecting {
+  color: orange;
+  font-size: 1.4em;
+}
+
+#status.connected {
+  color: green;
+}
+
+#status.disconnected {
+  color: red;
+}
+#error {
+  color: red;
+  font-size: 1em;
+}
+
+.navbar .navbar-text {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--color2);
+  padding: 0;
+
+}
+.user-info {
+  display: flex;
+  flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+  align-items: flex-end; /* Căn chỉnh phần tử về phía bên trái */
+}
+/* Cảnh báo */
+.hidden {
+  display: none;
+}
+
+#alertBox {
+  background-color: red;
+  color: white;
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s ease;
+}
+
+/* Khi cảnh báo được hiển thị */
+#alertBox.visible {
+  display: block;
+}
